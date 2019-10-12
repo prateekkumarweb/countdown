@@ -22,10 +22,10 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid pt-5">
     <h1 class="text-center">Countdown</h1>
-    <div class="text-center display-5">
-      After <span id="timer-span"></span>, it will four years since I started using GitHub.
+    <div class="text-center display-1">
+      <span id="timer-span"></span>
     </div>
   </div>
 
@@ -51,8 +51,8 @@
         // Get todays date and time
         var now = new Date().getTime();
 
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = now - countDownDate;
 
         if (distance > 0) {
           // Time calculations for days, hours, minutes and seconds
@@ -85,7 +85,7 @@
       }, 1000);
     }
 
-    createCountdown(new Date("Thu, 10 Oct 2019 19:54:23 +0530"), "timer-span");
+    createCountdown(new Date("Sat, 10 Oct 2015 19:54:23 +0530"), "timer-span");
   </script>
 </body>
 
